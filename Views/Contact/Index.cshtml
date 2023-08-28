@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Contacts List";
+}
+
+<div class="text-center">
+    <div class="d-flex justify-content-around">
+        <h1 class=" display-4">Contacts List</h1>
+        <a role="button" class="btn btn-info text-center" style="margin:20px" asp-controller="Contact" asp-action="Create">New Contact</a>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Functions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Nathanael Couto</td>
+                <td>coutonathanael21@gmail.com</td>
+                <td>+55 (37)9.9968-2087</td>
+                <td>
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>João da Silva</td>
+                <td>silvajoao@gmail.com</td>
+                <td>+55 (37)9.9999-9999</td>
+                <td>
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Maria Pereira</td>
+                <td>permaria@gmail.com</td>
+                <td>+55 (37)9.8888-8888</td>
+                <td>
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

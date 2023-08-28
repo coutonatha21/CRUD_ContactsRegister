@@ -1,11 +1,11 @@
 using System;
 
-namespace CRUD_ContactsRegister.Models
+namespace ContactsRegister.Models
 {
-	public class ErrorViewModel
-	{
-		public string RequestId { get; set; }
+    public class ErrorViewModel
+    {
+        public string RequestId { get; set; }
 
-		public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-	}
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }
