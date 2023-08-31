@@ -1,4 +1,6 @@
-﻿@{
+﻿@using CRUD_ContactsRegister.Models
+@model ContactModel
+@{
 	ViewData["Title"] = "Contacts List";
 }
 
@@ -8,18 +10,18 @@
 	</div>
 </div>
 
-<form>
+<form asp-controller="Contact" asp-action="Create" method="post">
 	<div class="form-group">
 		<label for="name">Name</label>
-		<input type="text" class="form-control" placeholder="Contact Name">
+		<input type="text" asp-for="Name" class="form-control" placeholder="Contact Name">
 	</div>
 	<div class="form-group">
 		<label for="email">Email</label>
-		<input type="email" class="form-control" placeholder="Contact Email">
+		<input type="email" asp-for="Email" class="form-control" placeholder="Contact Email">
 	</div>
 	<div class="form-group">
 		<label for="phone">Phone</label>
-		<input type="number" class="form-control" placeholder="Contact Phone">
+		<input type="number" asp-for="Phone" class="form-control" placeholder="Contact Phone">
 	</div>
 
 	<button type="submit" class="btn btn-primary btn-block" role="button">Add</button>
